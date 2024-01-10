@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Dingbats</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="question_1">once in a blue moon</string>
+</resources>
