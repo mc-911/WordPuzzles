@@ -1,5 +1,17 @@
 <resources>
-    <string name="app_name">Dingbats</string>
+    <string name="app_name">WordPuzzles</string>
     <string name="title_activity_game">GameActivity</string>
-    <string name="question_1">once in a blue moon</string>
+    <string name="bluemoon">once in a\nblue moon</string>
+    <string name="nopain">no pain\nno gain</string>
+    <string name="bullet">bite the\nbullet</string>
+    <string name="greenthumb">green\nthumb</string>
+    <string name="breakleg">break\na leg</string>
+    <string name="dimedozen">dime a\ndozen</string>
+    <string name="twobirds">to kill two\nbirds with\none stone</string>
+    <string name="thickthin">through\nthick\nand thin</string>
+    <string name="badegg">bad egg</string>
+    <string name="manmiddle">man in\nthe middle</string>
+    <string name="cutcrap">cut the\ncrap</string>
+    <string name="downflames">down in\nflames</string>
+    <string name="insultinjury">adding\ninsult to\ninjury</string>
 </resources>

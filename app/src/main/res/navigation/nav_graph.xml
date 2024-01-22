@@ -7,18 +7,49 @@
 
     <fragment
         android:id="@+id/startActivity"
-        android:name="com.example.dingbats.StartActivity"
+        android:name="com.example.dingbats.StartFragment"
         android:label="activity_start"
         tools:layout="@layout/fragment_start"
         >
         <action
-            android:id="@+id/action_startActivity_to_gameActivity"
-            app:destination="@id/gameActivity" />
+            android:id="@+id/action_startFragment_to_puzzleMenuFragment"
+            app:destination="@id/puzzleMenuFragment" >
+        </action>
     </fragment>
     <fragment
         android:id="@+id/gameActivity"
-        android:name="com.example.dingbats.GameActivity"
+        android:name="com.example.dingbats.GameFragment"
         android:label="activity_game"
         tools:layout="@layout/fragment_game"
-        />
+        >
+        <argument
+            android:name="phraseIndex"
+            app:argType="integer" />
+        <action android:id="@+id/action_gameFragment_to_completionScreenFragment" app:destination="@+id/completionScreenFragment"></action>
+
+    </fragment>
+    <fragment
+        android:id="@+id/puzzleMenuFragment"
+        android:name="com.example.dingbats.PuzzleMenuFragment"
+        android:label="fragment_puzzle_menu"
+        tools:layout="@layout/fragment_puzzle_menu"
+        >
+        <action
+            android:id="@+id/action_puzzleMenuFragment_to_gameFragment"
+            app:destination="@id/gameActivity" >
+        </action>
+    </fragment>
+    <fragment android:id="@+id/completionScreenFragment" android:name="com.example.dingbats.CompletionScreenFragment">
+        <argument
+            android:name="phraseIndex"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_completionScreenFragment_to_gameFragment"
+            app:destination="@id/gameActivity" >
+        </action>
+        <action
+            android:id="@+id/action_completionScreenFragment_to_puzzleMenuFragment"
+            app:destination="@id/puzzleMenuFragment" >
+        </action>
+    </fragment>
 </navigation>

@@ -8,12 +8,13 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.dingbats.databinding.FragmentStartBinding
 
-class StartActivity : Fragment() {
+class StartFragment : Fragment() {
     private var _binding: FragmentStartBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,7 +29,8 @@ class StartActivity : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.startButton.setOnClickListener {
-            findNavController().navigate(R.id.action_startActivity_to_gameActivity)
+            findNavController().navigate(        StartFragmentDirections.actionStartFragmentToPuzzleMenuFragment()
+            )
         }
     }
 

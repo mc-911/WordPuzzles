@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="phrases">
+        <item>
+            @string/greenthumb
+        </item>
+        <item>
+            @string/bluemoon
+        </item>
+        <item>
+            @string/bullet
+        </item>
+        <item>
+            @string/dimedozen
+        </item>
+        <item>
+            @string/breakleg
+        </item>
+        <item>
+            @string/nopain
+        </item>
+        <item>
+            @string/thickthin
+        </item>
+        <item>
+            @string/badegg
+        </item>
+        <item>
+            @string/manmiddle
+        </item>
+        <item>
+            @string/cutcrap
+        </item>
+        <item>
+            @string/downflames
+        </item>
+        <item>
+            @string/insultinjury
+        </item>
+    </array>
+    <array name="phraseDrawables">
+        <item>
+            @drawable/green_thumb
+        </item>
+        <item>
+            @drawable/blue_moon
+        </item>
+        <item>
+            @drawable/bite_the_bullet
+        </item>
+        <item>
+            @drawable/dime_a_dozen
+        </item>
+        <item>
+            @drawable/break_a_leg
+        </item>
+        <item>
+            @drawable/no_pain_no_gain
+        </item>
+        <item>
+            @drawable/through_thick_and_thin
+        </item>
+        <item>@drawable/bad_egg</item>
+        <item>@drawable/man_in_the_middle</item>
+        <item>@drawable/cut_the_crap</item>
+        <item>@drawable/down_in_flames</item>
+        <item>@drawable/adding_insult_to_injury</item>
+
+    </array>
+
+</resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StartActivity">
+    tools:context=".StartFragment">
 
     <TextView
         android:id="@+id/textView"
@@ -13,7 +13,6 @@
         android:fontFamily="sans-serif-light"
         android:text="Mustapha's"
 
-        android:textColor="@color/black"
         android:textSize="50sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,11 +22,12 @@
         app:layout_constraintVertical_bias="0.046" />
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-medium"
-        android:text="Dingbats"
+        android:text="Word Puzzles"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,34 +37,18 @@
         android:id="@+id/startButton"
         android:layout_width="300dp"
         android:layout_height="80dp"
-        android:layout_marginBottom="40dp"
         android:background="@drawable/rounded_corner"
         android:backgroundTint="@color/black"
         android:fontFamily="sans-serif-light"
         android:text="Start"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toTopOf="@+id/howToPlayButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/howToPlayButton"
-        android:layout_width="300dp"
-        android:layout_height="80dp"
-        android:layout_marginBottom="124dp"
-        android:background="@drawable/rounded_corner"
-        android:backgroundTint="@color/black"
-        android:fontFamily="sans-serif-light"
-        android:text="How to play?"
-        android:textColor="@color/black"
+        android:textColor="?android:textColor"
         android:textSize="30sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.64" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
